@@ -1,0 +1,118 @@
+h2 {
+    color: red;
+    border: burlywood dashed;
+    background: yellowgreen;
+}
+
+p {
+    color: #D6F585;
+    border: blueviolet dashed;
+}
+
+h1 {
+    color: green;
+    border: darkcyan dashed;
+    background: yellow;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+
+/* menggunakan class */
+h1.judul{
+    color: black;
+    text-align: center;
+}
+/* id */
+#sejarah{
+    color: gray;
+}
+
+thead{
+    color: red;
+}
+tbody{
+    color: black;
+}
+
+.navbar{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+
+.navbar:hover{
+    background-color: rosybrown;
+    transition: 2s;
+    box-shadow: 10px,10px,10px blue;
+    border: 1px dashed;
+}
+.kotak,video{
+    background: red;
+    height: 100px;
+    width: 150px;
+    transition: width 2s, height 4s;
+    border-radius: 25px;
+    box-shadow: 10px,10px,10px blue;
+}
+
+.kotak:hover,video{
+    height: 300px;
+    width: 500px;
+}
+
+@keyframes warna{
+    0%{background-color: red;}
+    25%{background-color: purple;}
+    50%{background-color: yellow;}
+    75%{background-color: blue;}
+    100%{background-color: greenyellow;}
+}
+
+.kotak {
+    animation-name: warna;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+img:hover{
+    transform: scale(2) 
+    rotate(10deg) 
+    translate(10px,10px)
+    ;
+
+}
+
+.rounded{
+    border: 1px red;
+    text-align: center;
+    animation-name: berubah;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    /* text-shadow: 4px,3px,2px, black; */
+    box-shadow: 2px,3px,2px black;
+    height: max-content;
+    font-size: 40px;
+}
+.rounded:hover{
+    transform: scale(2);
+}
+
+@keyframes berubah{
+    0%{background-color: green;}
+    50%{background-color: yellow;}
+    100%{background-color: red;}
+}
+
+.text{
+    text-shadow: 2px,2px,2px grey;
+}
